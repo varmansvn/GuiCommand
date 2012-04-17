@@ -60,7 +60,9 @@ public class CommandInterpreter extends SwingWorker<String, String> {
                 publish(output);
             }
         } catch (IOException e) {
-            Logger.getLogger(CommandInterpreter.class.getName()).log(Level.SEVERE, null, e);
+            //Logger.getLogger(CommandInterpreter.class.getName()).log(Level.SEVERE, null, e);
+            publish(e.getMessage());
+            return "Failed";
         }        
         return "successfully executed!!!";
     }

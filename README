@@ -1,0 +1,2 @@
+This application is used to send a DOS command right from the GUI.
+The issue is found when clicking on CANCEL; it is because just invoking the method cancel in swingworker is not enough, we need to intercept the kill command (CTRL + C). Later update on this issue.

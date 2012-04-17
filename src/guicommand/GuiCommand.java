@@ -67,7 +67,7 @@ public class GuiCommand extends JFrame {
         add(new JScrollPane(txaCommandOutput,
                 ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
                 ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER));
-       
+        
         JPanel southPanel = new JPanel();
         btnCancel.setEnabled(false);
         btnCancel.addActionListener(
@@ -88,7 +88,8 @@ public class GuiCommand extends JFrame {
         southPanel.add(lbStatus);
         
         add(northPanel, BorderLayout.NORTH);
-        add(txaCommandOutput, BorderLayout.CENTER);
+        //add(txaCommandOutput, BorderLayout.CENTER);
+      
         add(southPanel, BorderLayout.SOUTH);        
         
         setDefaultCloseOperation(EXIT_ON_CLOSE);
